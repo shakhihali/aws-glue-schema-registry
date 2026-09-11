@@ -31,7 +31,7 @@
     <parent>
         <groupId>software.amazon.glue</groupId>
         <artifactId>schema-registry-parent</artifactId>
-    <version>1.1.27</version>
+    <version>2.0.0</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
@@ -65,6 +65,12 @@
             <groupId>software.amazon.glue</groupId>
             <artifactId>schema-registry-serde</artifactId>
             <version>${parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>software.amazon.glue</groupId>
+            <artifactId>protobuf-kafkaconnect-converter</artifactId>
+            <version>${parent.version}</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>software.amazon.glue</groupId>
